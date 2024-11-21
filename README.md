@@ -2,6 +2,8 @@
 
 User script for filtering deck matchups by matchup games amount on [Limitless](https://play.limitlesstcg.com/).
 
+![image](https://github.com/user-attachments/assets/cbead3b2-e65f-4faf-b3c2-768bc6fbc737)
+
 # Prerequisites
 
 Install [Tampermonkey](https://www.tampermonkey.net/) extension for your browser.
