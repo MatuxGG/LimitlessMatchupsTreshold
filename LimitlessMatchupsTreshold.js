@@ -4,7 +4,7 @@
 // @version      1.2
 // @description  Filters table rows based on a dynamic threshold set via an input at the top right, with URL filters
 // @author
-// @match        *://*/*
+// @match        https://play.limitlesstcg.com/decks/*/matchups/*
 // @grant        none
 // ==/UserScript==
 
@@ -14,12 +14,6 @@
     // Configurations
     const columnTitle = "Matches"; // Replace with the title of the column to use
     const defaultThreshold = 20; // Default threshold value
-    const urlPatterns = [/matchups/]; // List of URL patterns (regular expressions)
-
-    // Check if the URL matches any of the patterns
-    const currentUrl = window.location.href;
-    const matchesPattern = urlPatterns.some(pattern => pattern.test(currentUrl));
-    if (!matchesPattern) return; // If no pattern matches, stop the script
 
     // Main function
     function filterRows(threshold) {
@@ -92,5 +86,6 @@
 
     // Execute the script when the page loads
     window.addEventListener('load', createThresholdInput);
+    console.log("[LimitlessMatchupsTrashold] Script loaded");
 
 })();
